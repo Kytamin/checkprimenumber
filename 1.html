@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check prime</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    function checkprime(number) {
+        if (number < 2) {
+            return false
+        }
+        for (let i = 2; i <= number - 1; i++) {
+            if (number % i === 0) {
+                return false
+            }
+        }
+        return true
+    }
+    let number=prompt("nhập vào số để kiểm tra")
+    if(checkprime(number)){
+        alert(`that's a prime number`)
+    }else {
+        alert(`it's not prime number`)
+    }
+
+</script>
+</html>
